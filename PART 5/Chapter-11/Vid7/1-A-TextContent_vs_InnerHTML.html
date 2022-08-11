@@ -1,0 +1,25 @@
+<!--InnerHTML vs TextContent:
+    
+    1) InnerHTML gives exactly the inside html code written inside that tag:
+        e.g. In <h1><strong>Hi</strong></h1>
+                writing console.log(document.querySelector("h1").innerHTML);
+            will give: <strong>Hi</strong>
+
+    2) TextContent gives only the text inside that tag, and not the extra tags present inside:
+        e.g. In <h1><strong>Hi</strong></h1>
+                writing console.log(document.querySelector("h1").textContent);
+            will give: Hi
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InnerHTML vs TextContent</title>
+</head>
+<body>
+    <h1><strong>Hi</strong></h1>
+
+    <script src = "./1-B-Console.js"></script>
+</body>
+</html>

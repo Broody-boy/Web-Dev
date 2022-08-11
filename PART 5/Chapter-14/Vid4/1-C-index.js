@@ -1,0 +1,1 @@
+$("button").css("color", "red");    //applies to all buttons

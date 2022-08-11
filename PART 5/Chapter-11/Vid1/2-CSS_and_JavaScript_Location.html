@@ -1,0 +1,28 @@
+<!--The location where CSS and JS are added matters: The browser always reads from top to bottom.
+    Here, in this example, when it encounters the JS script, it is not able to find the h1 and thus the JS does not function.
+    Moreover, the CSS styles are applied much later, when the browser reaches that line.
+
+    So, as a rule:
+    1) It is better to put CSS in the head. (not talking of inline CSS).
+    2) Always put JS in the end of body. (not talking of inline JS), as it might happen that a tag whose value is being tried to changed isn't on the scren yet (see the example below - h1 is not there on the scren at the time JS gets executed.).
+        Another benefit this will offer is that it will make the website load faster:
+        Atleast the HTML and CSS will get rendered and the JS can be executed even afterwards.
+        Otherwise, some time will get spent in reading through the script and would delay the rendering of HTML and CSS, making the website look slow
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript addition</title>
+    <script src="JS/index2.js"></script>            <!--JavaScript added here in the beginning.-->
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <link rel="stylesheet" href="CSS/styles.css">   <!--CSS added here at last.-->
+</body>
+</html>
+
+
+<!--Thus, JS is added at the last of body. And It is good to add CSS in the head section.-->
