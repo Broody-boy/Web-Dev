@@ -1,0 +1,47 @@
+<!--Selectors can be combined in three ways:
+
+1) Multiple selectors:
+    e.g:
+        h1, h2, h3, h4, h5, h6{             //Change font-family of all h1s, h2s, h3s, h4s, h5s, h6s to Montserrat. 
+            font-family: "Montserrat";
+        }
+
+2) Hierarchial Selectors: parent_selector child_selector{...}   //Space is there in between the selectors.
+    e.g:
+        #container .title-text {           //Change text-align of ALL the "title-text"s classes contained in the element with its id as "container" to left.
+            text-align: left;
+        }
+    
+    Another example:
+        div h1{                             //Change color of ALL "h1"s that are present in ALL "div" elements to red.
+            color: red;
+        }
+
+    Yet another example:
+        .container-element h1{              //Change color of ALL h1s present in ALL elements WITH CLASS "container" to red.
+            color red;
+        }
+
+    NOTE: It is useless to use an id for the child as id will already be unique:
+        #parent #child {
+            text-align: left;
+        }
+    is useless as the same can be done using just the child's id:
+        #child {
+            text-align: left;
+        }
+
+3) Literally Combined selectors: selector1.selector2{...} or selector1#selector2{...}    //No space in between the selectors
+    e.g:
+        div.container-fluid{    //Apply the style to all divs that have the class container-fluid.
+            color: red;
+        }
+        //This might be useful when there are two or more different html tags(e.g. h1 and p) having the same class(e.g. shown-red) and we want to target only one tag out of those.
+    
+    Another example:
+        .reddened.centered{    //Apply the style to all elements that have the class reddened as well as the class centered.
+            color: red;
+            text-align: center;
+        }
+
+-->

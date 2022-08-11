@@ -1,0 +1,39 @@
+<!--
+    1) Id selector are more specific than Class selectors which are more specific than Tag selectors.
+        Thus, priority: Id > Class > Tag selector.
+    2) But we also know that inline css is more specific than internal css which is more specific than external css.
+        Thus, priority: Inline > Internal > External CSS.
+    
+    This creates room for conflicts in CSS attributes.
+    Hence, follow these points:
+    A) Abstain from using id selectors, unless absolutely needed(like in a carousel button to target the sought carousel).
+    B) Don't use id selectors just because there is a single element which needs to be styled. Use class instead.
+    C) Try to avoid multiple classes for an element as it may lead to conflicts.
+    D) Never use inline CSS. It is not a good programming practice.
+-->
+
+
+<!-- e.g.: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Conflict Resolution</title>
+    <style>
+        h1{                 /*Tag selector*/
+            color: red;
+        }
+
+        .title {            /*Class selector*/
+            color: yellow;
+        }
+
+        #heading {          /*Id selector*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class = "title" id = "heading">Hello World</h1>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+
+    <style>
+        
+        h1{
+            font-size: 30px;
+        }
+
+        @media (min-width: 900px) and (max-width: 1000px) {     /*Always keep the media query afterwards as otherwise the later(general case) will get override the query and get applied.*/
+            h1{
+                font-size: 60px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>

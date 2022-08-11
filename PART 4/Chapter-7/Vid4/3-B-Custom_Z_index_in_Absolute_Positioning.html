@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .red{
+            background-color: red;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+        }
+
+        .yellow{
+            background-color: yellow;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .blue{
+            background-color: blue;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class = "red">
+        red
+    </div>
+
+    <div class = "yellow">
+        yellow
+    </div>
+
+    <div class = "blue">
+        blue
+    </div>
+
+    <h3 style="position: absolute; top: 140px" >Through this expt, we have found that the default z-index is 0 as setting to -1(blue div) makes it show up behind everything else and setting it to 1(red div) makes it show up above everything else.</h3>
+</body>
+</html>

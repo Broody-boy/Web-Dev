@@ -1,0 +1,119 @@
+#title{
+    background-color: #ff4c68;
+    color: #fff;    /* #fff is white. #000 is black*/
+    font-weight: bolder;
+}
+
+h1{
+    font-family: "Montserrat";
+    line-height: 1.5;
+    font-size: 4.3rem;
+    font-weight: bold;  /* same as 700 */
+}
+
+.container-fluid{
+    padding: 3% 15%;
+}
+
+body{
+    font-family: "Montserrat";
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;  /* same as 700 */
+}
+
+.navbar{
+    padding: 0 0 4.5rem;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.downld-btn{
+    margin: 5% 3% 5% 0;
+}
+
+.title-image{
+    width: 60%; /*60% of parent, which is a div. */
+    transform: rotate(25deg);
+}
+
+#features{
+    padding: 7% 10%;    /*I changed so that it adapts to my scren size. In course, it is 7% 15%*/
+}
+
+.feature-box{
+    text-align: center;
+    padding: 4%;    /*I changed so that it adapts to my scren size. In course, it is 5%.*/
+}
+
+h3{
+    font-family: "Montserrat";
+    font-weight: bold;  /* same as 700 */
+}
+
+p{
+    color: #8f8f8f;
+}
+
+.icon{
+    margin-bottom: 1rem;
+    color: #ef8172; /*Useless as i have used a png and not svg.*/
+}
+
+.icon:hover{
+    color: #ff4c68; /*Useless as i have used a png and not svg.*/
+}
+
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+    font-weight: bold;
+}
+
+h2{
+    font-family: "Montserrat";
+    font-weight: bold;  /* same as 700 */
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;   
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}

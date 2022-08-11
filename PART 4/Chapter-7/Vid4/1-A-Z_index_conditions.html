@@ -1,0 +1,46 @@
+<!--Here, since the elements are statically positioned(default value), they are one below the other and not stacked on top of each other.
+    Hence, Custom z-index does not apply until the css position attribute is set to absolute.
+    Note that even in a child-parent relationship, to specify custom z-index, you have to set the positioning as absolute.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class = "red">
+        red
+    </div>
+
+    <div class = "yellow">
+        yellow
+    </div>
+
+    <div class = "blue">
+        blue
+    </div>
+
+</body>
+</html>

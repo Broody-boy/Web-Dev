@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchial Selectors</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container-fluid .title{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h1 class = "title"> Hello World</h1>
+    </div>
+
+    <div class = "container-fluid">
+        <h1 class = "title"> By World</h1>
+    </div>
+
+    <h3>Here both h1s have same class. So, we cannot use just class selctor to modify just one of them.</h3>
+    <h3>But, since they both are contained in different divs(i.e. divs with different classes), we can use combined selectors - Hierarchial selectors to acheive our purpose.</h3>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!--In a child-parent relationship, children sit on top of parents.
+    Note that in a child-parent relationship, to specify custom z-index, you have to set the positioning as absolute.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class = "red">
+        red
+        <div class = "yellow">
+            yellow
+        </div>    
+    </div>
+
+    <div class = "blue">
+        blue
+    </div>
+
+    <h3>Here, yellow div(child) sits on top of red div(parent)</h3>
+    <h3>NOTE: In a child-parent relationship, to specify custom z-index, you have to set the positioning as absolute.</h3>
+</body>
+</html>
