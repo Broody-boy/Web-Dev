@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <div class = "row">
+        <div class = "col" style = "background-color:chartreuse; border: 1px solid;">col</div>
+    </div>
+    <p>This "col" classed div covers the entire width of the scren</p>
+
+    <div class = "row">
+        <div class = "col" style = "background-color: red; border: 1px solid;">col</div>
+        
+        <div class = "col" style = "background-color: red; border: 1px solid;">col</div>
+        
+        <div class = "col" style = "background-color: red; border: 1px solid;">col</div>
+    </div>
+    <p>Similarly, the combination of such "col" classed divs covers the width of the screen combinedly.</p>
+
+    <div class = "row"> <!--TOTAL FOR ONE SCREEN WIDTH IS TAKEN TO BE 12. SO, col-6 means half of the screen, col-3 means 1/4 of the screen, col-2 means 1/6 of the screen. -->
+        <div class="col-6" style = "background-color: green; border: 1px solid;">col-6</div>
+        <div class="col-3" style = "background-color: green; border: 1px solid;">col-3</div>
+        <div class="col-2" style = "background-color: green; border: 1px solid;">col-2</div>
+        <div class="col-1" style = "background-color: green; border: 1px solid;">col-1</div>
+    </div>
+    <p>The scren is taken to be of 12 units. So, col-6 means 6 units, i.e. half width. Similarly, col-3 is 1/4th of scren width, col-2 is 1/6th of scren width, col-1 is 1/12th of scren width. <br>
+        Note that these "col-n" classed divs are not responsive: they do not re arrange themselves when size is reduced. 
+</body>
+</html>
