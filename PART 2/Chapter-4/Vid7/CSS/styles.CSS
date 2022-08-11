@@ -1,0 +1,9 @@
+
+h1 {    /* Called 'TAG SELECTOR' */
+    color: red;
+    font-size: 200px;   /*Try to keep in alphabetic order*/
+}
+
+img{
+    background-color: red;
+}

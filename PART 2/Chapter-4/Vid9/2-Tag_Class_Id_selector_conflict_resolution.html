@@ -1,0 +1,32 @@
+<!--
+    ID selector overrides Class selector.
+    Class selector overrides Tag selector.
+
+    i.e. Priority: Id>Class>Tag selector
+-->
+
+
+<!-- e.g.: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Conflict Resolution</title>
+    <style>
+        h1{                 /*Tag selector*/
+            color: red;
+        }
+
+        .title {            /*Class selector*/
+            color: yellow;
+        }
+
+        #heading {          /*Id selector*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class = "title" id = "heading">Hello World</h1>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- DEFAULT HTML positioning rules:
+    1) Content is everything: For inline elements, their height and width both are determined by the content length, its font.
+        For block elements, even though their width remains same(i.e. the entire scren), its height is determined by the font of the content.
+    2) Order of elements on screen comes from the HTML code you write.
+    3) Children sit on top of parents:
+        <div>
+            <h1>a <span>pro</span>grammer</h1>
+        </div>
+        Here, span sits on h1 which further sits on div
+-->
+
+<!-- The position property of an element can have these values:
+    1) Static: Static implies go along with the default HTML positioning rules. This is the default value for the position property.
+    2) Relative: It positions the element relative to how it would have been positioned had it been static.
+        img{
+            position: relative;
+            left: 30px; //pushes the image 30px away from the left of the previous position where it used to be, i.e. pushes it 30px to the right. 
+        }
+        So:
+            left: 20px;  //Gets pushed right 20px.
+            right: 20px; //Gets pushed left 20px.
+            top: 20px;   //Gets pushed bottom 20px.
+            bottom: 20px;//Gets pushed top 20px.
+        NOTE: On moving the element, the other elements remain in place. i.e., it might occur that the element being moved gets above another element and covers it.
+    3) Absolute: It positions the element relative to its parent.
+        So:
+        img{
+                position: absolute;
+                right: 20px;    //would position the image 20px from the right border of the body(if body is the parent).
+        }
+        NOTE: On moving the element, other elements change their position to fill the space created.
+    4) Fixed: It makes the element fixed at its position, even on scrolling.
+-->

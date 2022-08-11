@@ -1,0 +1,57 @@
+<!--Here, the 3 divs - red, blue and yellow have been placed inside another div of colour light-gray. Thus, their parent is the light-gray div
+    So, the distances top, right, left and bottom would be measured from the parent here, as indicated by the definition of absolute positioning.
+    IMPORTANT NOTE: For the above thing to happen, the parent element(i.e. the light-gray div here) must have its POSITION SET AS RELATIVE.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>     /*All the distances mentioned below get measured from the parent, as as indicated by the definition of absolute positioning.*/
+        body{
+            margin: 0;
+        }
+        .red{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            right: 200px;
+            top: 200px;
+        }
+
+        .blue{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;            
+            right: 300px;
+            bottom: 300px;
+        }
+
+        .yellow{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            position: absolute;
+            right: 400px;
+            bottom: 400px;
+        }
+    </style>
+
+</head>
+<body>
+    <div style = "height: 500px; width: 500px; background-color: lightgray; position: relative;">
+        <div class = "red">
+        </div>
+        
+        <div class = "blue">    
+        </div>
+
+        <div class = "yellow">
+        </div>
+    </div>
+</body>
+</html>

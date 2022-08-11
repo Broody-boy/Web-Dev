@@ -1,0 +1,31 @@
+<!--
+A) Concept in CSS lovingly known as the box model:
+  1) If i change the width of image to be 100%, it is going to change the width to 100% and in the process is going to scale up the image.
+  2) If i increase the height of a div, it expands and pushes down any other other content below that is not in this container
+  Similarly, i can do this with the width so that anything that used to be on the right of this div would get pushed out of the way.
+  
+B) An element has four parts: (from outwards to inwards)
+    margin: The margin is a buffer zone between the element and other adjoining elements.
+    border: The border around the element.
+    Padding: the space between the border and the content of the element.
+    Height and Width: The size you specify (it may have default values also, e.g. for a div, It automatically acquires size just enough to contain the content that is inside.)
+    
+    Note: Specifying a border or margin does not encroach on the element's height and width attributes.
+    i.e. if a blue box is 300 by 300px and you specify a 50px border to it, that blue area is still going to be 300 by 300px. Thus, the entire thing is going to take up 400px.
+    On specifying padding, it increases the size of the box, but it does not encroach on the content. Infact, the blue area in the box gets increased to incorporate the space for padding.
+-->
+<!-- NOTE: It is not necessary to specify border/margin/padding for all 4 sides, you might specify it for custom sides also:
+  div{
+    padding-top: 20px;
+    padding-left: 20px;
+    border-top: 0px;
+    border-width: 0px 10px 20px 30px; //Goes in Clkwise order starting from top: top, right, bottom, left.
+  }
+
+-->
+
+<!-- NOTE: There are two ways of specifying the size of an element:
+  1) Static size in pixels.
+  2) Size in percentages.
+     Note that when we say: img{width:100%;}, 100% refers to 100% of the viewport. Viewport is the scren you are viewing the website upon e.g. Computer screen, phone screen etc.
+-->

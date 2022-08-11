@@ -1,0 +1,69 @@
+<!-- The display property of an element can have these values:
+1) Block: The element takes up the whole width of the scren, so effectively blocking out any other elements from sitting next to it either on the left or right.
+2) Inline: The element takes only that much space in height as well as width as is required.
+NOTE: Block elements can be specified a width but still they'll blocking out any other elements from sitting next to it either on the left or right.
+    However, for inline elements, you can't change their width.
+    So what if i want to add an element that can occupy the same line but at the same time i can set their widths?
+    Solution: To get the best of both worlds, you can use Inline-block:
+3) Inline-Block: 
+4) None: Gets rid of the element i.e. It makes the webpage appear as if the element didn't exist.
+
+NOTE: Setting the visibility: hidden leaves the corresponding space, corresponding to the element, as empty.
+But setting the display: none does not leave any empty space. Instead, it makes the webpage appear as if the element didn't exist.
+-->
+
+<!--Tags that are block elements by default:
+1) Paragraph - p tag.
+2) Headers - All h1 to h6.
+3) Divisions - div tag.
+4) List and list items - ol, ul, li tag.
+5) Forms - form tag.
+-->
+
+<!--Tags that are inline elements by default:
+1) Span - span tag.
+2) Images - img tag.
+3) Anchors - a tag.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+</head>
+
+<body>
+    <p>This is an example of block display element, which will span whole screen width:</p>
+    <p style = "background-color: red;">Hello</p>
+    <p style = "background-color: red;">World</p>
+
+    <p>Now, inline elements:</p>
+    <span style = "background-color: blue;">Hello</span>
+    <span style = "background-color: blue;">World</span>
+    <span style = "background-color: blue;">Hello</span>
+    <span style = "background-color: blue;">World</span>
+
+    <p>Block turned to inline:</p>
+    <p style = "background-color: red; display: inline;">Hello</p>
+    <p style = "background-color: red; display: inline;">World</p>
+
+    <p>Inline turned to block:</p>
+    <span style = "background-color: blue; display: block;">Hello</span>
+    <span style = "background-color: blue; display: block;">World</span>
+    
+    <p>Block elements can be specified a width but still they'll occupy a single line:</p>
+    <p style = "background-color: red; width: 100px;">Hello</p>
+    <p style = "background-color: red; width: 100px;">World</p>
+
+    <p>Inline elements do not change size even on specifying a width</p>
+    <span style = "background-color: blue; width: 100px;">Hello</span>
+    <span style = "background-color: blue; width: 100px;">World</span>
+
+    <p>So the Solution is using inline-block. Now you can have elements on the same line as well as you can change their width 😉:</p>
+    <p style = "background-color: red; display:inline-block; width: 100px;">Hello</p>
+    <p style = "background-color: red; display: inline-block; width: 100px;">World</p>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+body{
+    background-color: #EAF6F6;
+}
+
+hr{
+height: 0px;    /*We want only border. So height should be zero*/
+width: 6%;      /*The dots should span only 6% of the screen's width*/
+border-color: grey;
+border-style: dotted none none;
+/*OR:
+    border-style: none
+    border-top-style: dotted
+*/
+border-width: 6px;
+}
+
+h1{
+    color: #66BFBF; /*In video*/
+    color: #00baba; /*Better colour*/
+}
+
+h3{
+    color: #66BFBF; /*In video*/
+    color: #00baba; /*Better colour*/
+}

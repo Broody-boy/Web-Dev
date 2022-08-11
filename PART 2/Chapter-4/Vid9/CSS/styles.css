@@ -1,0 +1,40 @@
+/****************TAG SELECTORS*****************/
+
+h1 {
+    color: red;
+    font-size: 200px;
+}
+
+img{
+    background-color: red;
+}
+
+/****************CLASS SELECTORS*****************/
+
+.bacon{
+    background-color: green;
+}
+
+.broccoli{
+    background-color: red;
+}
+
+/****************ID SELECTORS*****************/
+
+#heading{
+    color: blue;
+}
+
+#first-para{
+    color: greenyellow;
+}
+
+#second-para{
+    color: yellow;
+}
+
+
+/* DIFFERENCE BETWEEN CLASS AND ID SELECTORS:
+Multiple tags, or multiple categories of tags(e.g. h1, hr, img etc.) can have the same class but the Id is unique for each element.
+This means that no two h1s can have the same Id.
+*/

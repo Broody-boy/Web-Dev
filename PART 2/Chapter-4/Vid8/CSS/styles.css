@@ -1,0 +1,28 @@
+/****************TAG SELECTORS*****************/
+
+h1 {
+    color: red;
+    font-size: 200px;
+}
+
+img{
+    background-color: red;
+}
+
+
+/****************CLASS SELECTORS*****************/
+
+.bacon{
+    background-color: green;
+}
+
+.broccoli{
+    background-color: red;
+}
+
+/* NOTE: 
+1) The same class name can be used for multiple tags, even different ones.
+   So, it is possible that a h1 and a p tag both have the same class selector so that we can apply similar styling to both.
+2) The Class selector is more specific than Tag selector, i.e. if both are specified, Class selector overrides Tag selector.
+    Here, img tag selector is overriden by bacon and broccoli class selectors.
+*/
